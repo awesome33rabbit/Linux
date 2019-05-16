@@ -1,12 +1,12 @@
-ps -aux
+```ps -aux```
 
-pgrep supervisord
+```pgrep supervisord```
 
-gunicorn /root/sztt/working/sztt.wsgi --bind 0.0.0.0:9988
-gunicorn -b 0.0.0.0:9988 sztt.wsgi:application
+```gunicorn /root/sztt/working/sztt.wsgi --bind 0.0.0.0:9988```
+```gunicorn -b 0.0.0.0:9988 sztt.wsgi:application```
 
-kill -s 9 1722
+```kill -s 9 1722```
 
-supervisorctl
+```supervisorctl```
 
-sudo supervisord -c /etc/supervisord/supervisord.conf
+```sudo supervisord -c /etc/supervisord/supervisord.conf```
