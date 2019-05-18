@@ -2,6 +2,8 @@
 
 ```pgrep supervisord```
 
+``` ps -ef | grep supervisord```
+
 ```gunicorn /root/sztt/working/sztt.wsgi --bind 0.0.0.0:9988```
 
 ```gunicorn -b 0.0.0.0:9988 sztt.wsgi:application```
